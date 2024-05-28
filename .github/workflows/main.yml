@@ -25,7 +25,7 @@ jobs:
       - name: configure aws credentials
         uses: aws-actions/configure-aws-credentials@v1.7.0
         with:
-          role-to-assume: arn:aws:iam::989483679457:role/ECR-Access-to-GIT #change to reflect your IAM role’s ARN
+          role-to-assume: arn:aws:iam::989483679457:role/GitHubAction-AssumeRoleWithAction
           role-session-name: GitHub_to_AWS_via_OIDC
           aws-region: ${{ env.AWS_REGION }}
       # Hello from AWS: WhoAmI
